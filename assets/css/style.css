@@ -123,7 +123,7 @@ line-height: 5ch;
 
 .sidebar {
     position: absolute;
-    float: right;
+    /* float: right; */
     top: 150px;
     left: 720px;
     Width: 270px;
@@ -218,16 +218,81 @@ footer {
     /* -ms-text-size-adjust: auto;  */
 }
 
-@media screen and max-width(969px) {
+@media screen and (max-width: 969px) {
     .container {
+    position: static;
     width: 100%;
     }
     #maincontainer {
-        position: relative;
-        width: 60%;
+        position: absolute;
+        width: 450px;
+        top: 150px;
+        margin: 100px, 0px, 50px,0px;
     }
+    .myimage {
+        float: none; 
+    }
+
     .sidebar {
-        position: relative;
-        width:30%;
+        position: absolute;
+        margin: 100px, 15px, 50px, 0px;
+        top: 150px;
+        left: 500px;
     }
+    .project {
+        float: none;
     }
+}    
+
+@media screen and (max-width: 768px) {
+    .myimage {
+        float: left;
+        
+    }
+    #maincontainer {
+        Width: 450px;
+    }
+
+
+    .sidebar {
+        position: absolute;
+        margin: 100px, 15px, 1000px, 0px;
+        left: 30px; 
+        margin-bottom: 200px;
+    }
+
+    .project {
+        float: left;
+    }
+
+    #connect1 {
+        top: 1000px;
+    }
+
+    #connect2 {
+        top: 1350px;
+    }
+
+    #connect3 {
+        top: 900px;
+    }
+
+    @media screen and (max-width: 640px) {
+        #logo {
+            float: none;
+        }
+        nav {
+            float: left;
+            margin-top: 2px;
+        }
+        .project {
+            float: none;
+        }
+        #connect2 {
+            top: 2000px;
+        }
+        /* .sidebar {
+            width: 100%;
+        } */
+
+}
