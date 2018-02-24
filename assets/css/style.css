@@ -246,13 +246,12 @@ footer {
 
 @media screen and (max-width: 768px) {
     .myimage {
-        float: left;
-        
+        float: left;        
     }
+
     #maincontainer {
         Width: 450px;
     }
-
 
     .sidebar {
         position: absolute;
@@ -276,8 +275,12 @@ footer {
     #connect3 {
         top: 900px;
     }
-
+}
     @media screen and (max-width: 640px) {
+        #mainhead {
+            position: static;
+            width:100%;
+        }
         #logo {
             float: none;
         }
@@ -291,8 +294,11 @@ footer {
         #connect2 {
             top: 2000px;
         }
-        /* .sidebar {
+        .sidebar {
+            left: 0;
             width: 100%;
-        } */
+        }
+
+        
 
 }
